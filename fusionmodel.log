@@ -1,0 +1,42 @@
+I Save log info to: ./fusionmodel.log
+[1;33mW[0m [1;33m__init__: rknn-toolkit2 version: 1.5.0+1fa95b5c[0m
+[1;33mW[0m [1;33mbuild: The dataset='./dataset.txt' is ignored because do_quantization = False![0m
+I base_optimize ...
+I base_optimize done.
+I 
+I fold_constant ...
+I fold_constant done.
+I 
+I correct_ops ...
+I correct_ops done.
+I 
+I fuse_ops ...
+I fuse_ops results:
+I     convert_abs_to_leakyrelu: remove node = ['Abs_11'], add node = ['Abs_11_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_12'], add node = ['Abs_12_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_26'], add node = ['Abs_26_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_27'], add node = ['Abs_27_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_43'], add node = ['Abs_43_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_44'], add node = ['Abs_44_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_58'], add node = ['Abs_58_2leakyrelu']
+I     convert_abs_to_leakyrelu: remove node = ['Abs_59'], add node = ['Abs_59_2leakyrelu']
+I     convert_div_to_mul: remove node = ['Div_73'], add node = ['Div_73_2mul']
+I     replace_mul_add_by_bn: remove node = ['Div_73_2mul', 'Add_75'], add node = ['output_bn']
+I     fold_constant ...
+I     fold_constant done.
+I fuse_ops done.
+I 
+I sparse_weight ...
+I sparse_weight done.
+I 
+I rknn building ...
+I rknn buiding done.
+I target set by user is: rk3588
+I Starting ntp or adb, target is RK3588
+I Device [8550ae0ed69723b3] not found in ntb device list.
+I Start adb...
+I Connect to Device success!
+[1;33mW[0m [1;33minit_runtime: Flag perf_debug has been set, it will affect the performance of inference![0m
+[1;33mW[0m [1;33minit_runtime: Flag eval_mem has been set, it will affect the performance of inference![0m
+[1;33mW[0m [1;33minference: The 'data_format' has not been set and defaults is nhwc![0m
+[1;33mW[0m [1;33meval_perf: The result of eval_perf is also saved to eval_perf.csv![0m
